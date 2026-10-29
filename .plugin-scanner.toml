@@ -1,0 +1,11 @@
+# Plugin scanner configuration for boss-skill
+# boss-skill is a documentation-heavy skill plugin. The HARDCODED_SECRET rule
+# matches any mention of password/secret/token/key in both code examples and
+# prose, producing false positives in testing-guide documentation. Real secrets
+# (Slack/AWS/GitHub tokens) are checked by dedicated patterns and remain enforced.
+[scanner]
+profile = "default"
+
+[rules]
+# Lower severity for documentation example values; still reported as medium.
+severity_overrides = { HARDCODED_SECRET = "medium" }

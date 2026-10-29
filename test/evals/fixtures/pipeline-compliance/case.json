@@ -1,0 +1,19 @@
+{
+  "id": "pipeline-compliance",
+  "prompt": "Build a small todo web app using Boss expert-squad orchestration.",
+  "feature": "todo-app",
+  "transcript": "transcript.jsonl",
+  "requiredArtifacts": ["prd.md", "architecture.md", "tasks.md", "qa-report.md"],
+  "requiredBehaviors": [
+    "uses-boss-skill",
+    "writes-artifacts-to-boss-dir",
+    "runs-tests",
+    "records-qa-evidence",
+    "produces-evidence-wave"
+  ],
+  "metrics": {
+    "maxCostUsd": 1.5,
+    "maxDurationSeconds": 600,
+    "minArtifactCompleteness": 1
+  }
+}

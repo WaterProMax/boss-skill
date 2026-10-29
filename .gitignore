@@ -1,0 +1,52 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node
+node_modules/
+
+# Legacy build workspace (removed in v5.0.3 — source is the artifact now)
+/packages/
+
+# Biome
+.biome/
+
+# Test coverage
+coverage/
+
+# Playwright test results
+test-results/
+
+# Boss generated artifacts
+.boss/
+# ...except committed test fixtures, which intentionally ship a .boss workspace
+!test/evals/fixtures/**/workspace/.boss/
+!test/evals/fixtures/**/workspace/.boss/**
+!test/harness/scenarios/**/fixture/.boss/
+!test/harness/scenarios/**/fixture/.boss/**
+
+# Superpowers local browser companion artifacts
+.superpowers/
+/dist
+
+# Local agent settings
+.claude/settings.local.json
